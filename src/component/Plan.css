@@ -1,0 +1,77 @@
+.container-side, .container-mid { 
+    
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: min(100%, 350px);
+    
+   
+}
+
+.container-mid{
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    padding: 3rem 2rem;
+
+}
+
+.container-mid > button {
+    background-color: white;
+    color:hsl(237, 63%, 64%);
+    font-weight: 700;
+    width: 100%;
+}
+
+.container-mid > button:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.container-side{
+    background-color: rgba(255,255,255,255);
+    padding: 3rem 2rem;
+}
+
+.container-side > button { 
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color:#FFF;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+   
+}
+
+.container-side > button:hover {
+    color:hsl(237, 63%, 64%);
+    border-color: hsl(237, 63%, 64%);
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid hsl(237, 63%, 64%);
+    
+ 
+}
+
+.container-side, .container-mid > button {
+    width: 100%;
+}
+
+.title {
+    font-size: 17px;
+    margin-top: -1.5rem;
+}
+
+.divided {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.divider {
+    flex-grow: 1;
+    border-bottom: 1px solid rgba(196, 184, 184, 0.809);
+    margin: 5px;
+
+  }
+

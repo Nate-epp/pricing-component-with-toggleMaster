@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  background-color: rgba(245,245,253,255);
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(/Users/nate_epp/Documents/FrontEndPractice/pricing-component-with-toggle-master/pricing-component-with-toggle/src/images/bg-top.svg), url(/Users/nate_epp/Documents/FrontEndPractice/pricing-component-with-toggle-master/pricing-component-with-toggle/src/images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  margin-top: 3rem;
+  height: auto;
+ 
+}
+
+.top {
+  font-size: 28px;
+}
+
+@media (max-width: 750px){
+  .grid{
+    /* display: block; */
+    grid-template-columns: repeat(1, 300px);
+    gap:1rem;
+  }
+}
